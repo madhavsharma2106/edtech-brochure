@@ -4,6 +4,15 @@ $breakpoints: (
 );
 
 .container {
-  width: map-get($breakpoints, "large");
+  max-width: map-get($breakpoints, "large");
   margin: auto;
+}
+
+@mixin square($side) {
+  height: $side;
+  width: $side;
+}
+@mixin circle($diameter) {
+  @include square($diameter);
+  border-radius: 50%;
 }

@@ -1,0 +1,76 @@
+@import "../../../styles/main.scss";
+
+.menu-logged-in {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    width: 144px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  .user-info {
+    display: flex;
+    .icon {
+      @include square(34px);
+      box-sizing: border-box;
+      padding: 7px;
+      object-fit: contain;
+      border-radius: 5px;
+      margin-right: 16px;
+    }
+    .award {
+      background-image: linear-gradient(to top, #fb8e46, #ffd01e);
+    }
+
+    .notifications {
+      position: relative;
+      .alerts {
+        background-color: $secondary-blue;
+      }
+      .alert-count {
+        @include circle(13px);
+        background-color: $primary-red;
+        color: $white;
+        font-weight: $semibold;
+        position: absolute;
+        font-size: 10px;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .profile {
+      display: flex;
+      .level-info {
+        height: 34px;
+        display: flex;
+        background-color: $secondary-blue;
+        padding: 7px;
+        border-radius: 5px 0 0 5px;
+        box-sizing: border-box;
+        align-items: center;
+        font-weight: $semibold;
+        font-size: 17px;
+        color: $white;
+        img {
+          margin-right: 3px;
+          height: 14px;
+          width: 16px;
+        }
+      }
+      .profile-icon {
+        @include square(34px);
+        border-radius: 0 5px 5px 0;
+        margin-right: 7.5px;
+      }
+
+      @media (max-width: map-get($breakpoints, "large")) {
+        .menu-arrow {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,15 +1,20 @@
 import React from "react";
 import { Text } from "../../atoms";
 import { TextVariant, TextType } from "../../atoms/Text";
+import "./index.scss";
+import { MenuLoggedIn } from "../../organisms";
 
 function LandingPage() {
   return (
-    <div className="container">
-      Landing Page
-      <Text>asdfasd</Text>
-      <Text type={TextType.span} variant={TextVariant.headingOne}>
-        Welcome to the school of the future.
-      </Text>
+    <div className="landing-page">
+      <div className="container">
+        <MenuLoggedIn />
+        <div className="hero-container">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+          consequatur molestias veniam officiis id autem quasi nobis ducimus
+          voluptas hic!
+        </div>
+      </div>
     </div>
   );
 }
