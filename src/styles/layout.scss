@@ -1,0 +1,9 @@
+$breakpoints: (
+  large: 1168px,
+  small: 768px,
+);
+
+.container {
+  width: map-get($breakpoints, "large");
+  margin: auto;
+}
