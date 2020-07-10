@@ -2,7 +2,8 @@
 .landing-page {
   background-image: url("../../../assets/images/bg-header.svg"),
     linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
-  background-size: contain;
+
+  background-size: contain, cover;
   background-repeat: no-repeat;
 
   .hero-container {
@@ -26,6 +27,8 @@
   }
 
   .course-catalogue {
+    width: 95%;
+    margin: auto;
     padding-top: 86px;
     .heading {
       color: $white;
@@ -56,9 +59,12 @@
 
     .courses {
       display: flex;
-      justify-content: space-around;
       padding-top: 55px;
       padding-bottom: 97px;
+      & > div {
+        flex: 1;
+        margin: 0 15px;
+      }
     }
   }
 
