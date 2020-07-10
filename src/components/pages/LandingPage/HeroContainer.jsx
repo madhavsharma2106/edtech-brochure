@@ -32,10 +32,6 @@ function HeroContainer() {
       <img
         className="image"
         src={require("../../../assets/images/header-photo/header-photo.png")}
-        srcSet={
-          (require("../../../assets/images/header-photo/header-photo@2x.png"),
-          require("../../../assets/images/header-photo/header-photo@3x.png"))
-        }
         alt="A young child learning to code and smiling into the camera"
       />
     </div>
