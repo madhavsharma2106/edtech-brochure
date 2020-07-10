@@ -1,8 +1,84 @@
+@import "../../../styles/main.scss";
 .landing-page {
   background-image: url("../../../assets/images/bg-header.svg"),
     linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
   background-size: contain;
   background-repeat: no-repeat;
 
-  height: 2000px;
+  .hero-container {
+    padding-top: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text {
+      width: 80%;
+      .badge {
+        @include square("16px");
+        margin-bottom: -7px;
+        padding-left: 2px;
+      }
+    }
+    .image {
+      width: 480px;
+      height: 300px;
+    }
+  }
+
+  .course-catalogue {
+    padding-top: 86px;
+    .heading {
+      color: $white;
+      margin-bottom: 37px;
+    }
+    .catalogues {
+      padding-bottom: 67px;
+    }
+  }
+
+  .featured-courses {
+    .title {
+      text-align: center;
+      p {
+        margin: 0;
+        .chip {
+          margin-left: 25px;
+        }
+      }
+      .badge {
+        height: 20px;
+        width: 17px;
+        transform: translate(0, 25%);
+        margin-left: 28px;
+        margin-right: 5px;
+      }
+    }
+
+    .courses {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 55px;
+      padding-bottom: 97px;
+    }
+  }
+
+  .event-details {
+    padding: 16px 0;
+    .detail {
+      padding-bottom: 10px;
+      img {
+        @include square(15px);
+        transform: translate(0, 25%);
+        margin-right: 20px;
+        margin-left: 14px;
+      }
+    }
+  }
+  .enrollment-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    .cta {
+      color: $primary-blue;
+    }
+  }
 }

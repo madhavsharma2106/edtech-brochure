@@ -1,0 +1,67 @@
+@import "../../../styles/main.scss";
+.course-card {
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #dbe4ee;
+  .course-creative {
+    position: relative;
+    .creative {
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+    }
+    .tag {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  }
+  .info {
+    padding: 16px;
+    * {
+      margin: 0;
+    }
+
+    .grade-info {
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-around;
+      .grade {
+        width: 40%;
+        text-align: center;
+
+        .section {
+          display: flex;
+          justify-content: center;
+          img {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+
+    .badges-offered {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 16px 0;
+      .offer {
+        padding-bottom: 10px;
+        .chip {
+          margin-right: 8px;
+        }
+        .badge {
+          transform: translate(0, 25%);
+          margin: 0 11px;
+          @include square(24px);
+        }
+      }
+    }
+
+    .horizontal-line {
+      padding-top: 22px;
+      padding-bottom: 8px;
+      border-bottom: solid 2px #e2ebef;
+    }
+  }
+}

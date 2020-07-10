@@ -1,20 +1,21 @@
 import React from "react";
-import { Text } from "../../atoms";
-import { TextVariant, TextType } from "../../atoms/Text";
 import "./index.scss";
 import { MenuLoggedIn } from "../../organisms";
+import HeroContainer from "./HeroContainer";
+import CourseCatalogue from "./CourseCatalogue";
+import FeaturedCourses from "./FeaturedCourses";
+import Footer from "../../organisms/Footer";
 
 function LandingPage() {
   return (
     <div className="landing-page">
       <div className="container">
         <MenuLoggedIn />
-        <div className="hero-container">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-          consequatur molestias veniam officiis id autem quasi nobis ducimus
-          voluptas hic!
-        </div>
+        <HeroContainer />
+        <CourseCatalogue />
+        <FeaturedCourses />
       </div>
+      <Footer />
     </div>
   );
 }

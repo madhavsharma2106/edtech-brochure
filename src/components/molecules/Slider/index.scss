@@ -1,0 +1,27 @@
+@import "../../../styles/main.scss";
+
+.slick-slider {
+  margin: auto;
+  .slider-arrow {
+    @include square("48px");
+    background-color: $white;
+    top: 50%;
+    cursor: pointer;
+    position: absolute;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    border: solid 1px #ebebeb;
+    transform: translate(0, -50%);
+  }
+
+  .slider-arrow-left {
+    left: -60px;
+  }
+  .slider-arrow-right {
+    right: -60px;
+  }
+}

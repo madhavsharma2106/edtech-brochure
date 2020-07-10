@@ -4,7 +4,15 @@ import classnames from "classnames";
 
 export const TextVariant = {
   headingOne: "heading-one",
+  headingTwo: "heading-two",
+  titleOne: "title-one",
+  titleTwo: "title-two",
+  titleThree: "title-three",
+  titleFour: "title-four",
   headingText: "heading-text",
+  subHadingOne: "sub-heading-one",
+  highlightOne: "highlight-one",
+  subTextOne: "sub-text-one",
 };
 
 export const TextType = {
@@ -17,7 +25,7 @@ function Text(props) {
 
   if (type === TextType.span)
     return (
-      <span className={classes} {...props}>
+      <span {...props} className={classes}>
         {children}
       </span>
     );

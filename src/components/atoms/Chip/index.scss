@@ -1,0 +1,39 @@
+@import "../../../styles/main.scss";
+.chip {
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.chip-highlight-one {
+  padding: 5px 14px;
+  background-color: $primary-pink;
+  letter-spacing: 0.1px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: $semibold;
+  color: $white;
+}
+
+.chip-highlight-two {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: $medium;
+  color: $white;
+}
+
+.chip-highlight-three {
+  background-color: rgba(11, 194, 159, 0.4);
+  padding: 5px 8px;
+  font-size: 12px;
+  font-weight: $medium;
+  color: $primary-green;
+}
+
+.chip-highlight-four {
+  background-color: #fff4d6;
+  padding: 5px 8px;
+  font-size: 12px;
+  font-weight: $medium;
+  color: $primary-yellow;
+}

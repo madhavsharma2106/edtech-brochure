@@ -1,14 +1,61 @@
 @import "../../../styles/main.scss";
+
+@mixin fontSizeHeightSpacing($size, $height, $spacing) {
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
 .text-heading-one {
-  font-size: 52px;
-  line-height: 60px;
-  letter-spacing: 0.22px;
+  @include fontSizeHeightSpacing(52px, 60px, 0.22px);
   color: $white;
   font-weight: medium;
 }
 
 .text-heading-text {
-  size: 24px;
-  line-height: 34px;
-  letter-spacing: 0.24px;
+  @include fontSizeHeightSpacing(24px, 34px, 0.24px);
+  color: $white;
+}
+
+.text-highlight-one {
+  color: $primary-yellow;
+}
+
+.text-heading-two {
+  @include fontSizeHeightSpacing(32px, 44px, 0.18px);
+  font-weight: $semibold;
+  text-align: center;
+  color: $primary-black;
+}
+
+.text-title-one {
+  @include fontSizeHeightSpacing(20px, 28px, 0.2px);
+  color: $primary-black;
+}
+.text-title-two {
+  @include fontSizeHeightSpacing(17px, 26px, 0.2px);
+  color: $primary-black;
+  font-weight: $semibold;
+}
+.text-title-three {
+  @include fontSizeHeightSpacing(12px, 24px, 0.17px);
+  font-weight: $medium;
+  color: $secondary-black;
+}
+
+.text-title-four {
+  @include fontSizeHeightSpacing(14px, 28px, 0.2px);
+  font-weight: $semibold;
+  color: $primary-black;
+}
+
+.text-sub-heading-one {
+  @include fontSizeHeightSpacing(17px, 26px, 0.2px);
+  color: $secondary-black;
+}
+
+.text-sub-text-one {
+  @include fontSizeHeightSpacing(14px, 20px, 0.2px);
+  font-weight: $light;
+  color: $primary-black;
 }
