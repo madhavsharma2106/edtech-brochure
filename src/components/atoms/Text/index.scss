@@ -29,7 +29,7 @@
 }
 
 .text-title-one {
-  @include fontSizeHeightSpacing(20px, 28px, 0.2px);
+  @include fontSizeHeightSpacing(24px, 28px, 0.2px);
   color: $primary-black;
 }
 .text-title-two {
