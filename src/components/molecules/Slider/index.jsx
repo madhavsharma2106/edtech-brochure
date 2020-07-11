@@ -49,14 +49,9 @@ function Slider({ children }) {
         },
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
         breakpoint: 480,
         settings: {
+          centerMode: true,
           slidesToShow: 1,
         },
       },

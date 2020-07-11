@@ -92,13 +92,31 @@
 
 @media (max-width: map-get($breakpoints, "small" )) {
   .landing-page {
+    background-size: auto;
     .hero-container {
       flex-direction: column;
+      padding: 16px;
+      .text {
+        width: 100%;
+      }
+      .image {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+    .course-catalogue {
+      .heading {
+        color: $primary-black;
+      }
     }
 
     .featured-courses {
       .courses {
         flex-direction: column;
+        & > div {
+          margin-top: 16px;
+        }
       }
     }
   }

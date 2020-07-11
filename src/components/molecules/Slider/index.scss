@@ -25,3 +25,11 @@
     right: -50px;
   }
 }
+
+@media (max-width: map-get($breakpoints, "small")) {
+  .slick-slider {
+    .slider-arrow {
+      visibility: hidden;
+    }
+  }
+}

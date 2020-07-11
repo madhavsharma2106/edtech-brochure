@@ -67,8 +67,10 @@ function CourseCard(props) {
               alt="Skill Badge"
               className="badge"
             />
-            {skills.map((skill) => (
-              <Chip variant={ChipVariant.highlightThree}>{skill}</Chip>
+            {skills.map((skill, i) => (
+              <Chip key={i} variant={ChipVariant.highlightThree}>
+                {skill}
+              </Chip>
             ))}
           </div>
           <div className="offer">
