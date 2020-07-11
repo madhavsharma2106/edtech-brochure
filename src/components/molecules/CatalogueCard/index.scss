@@ -14,6 +14,8 @@
   align-items: center;
   text-align: center;
   justify-content: space-around;
+  @include hoverWithBoxShadow();
+  cursor: pointer;
   img {
     @include square(108px);
   }

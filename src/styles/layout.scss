@@ -16,3 +16,9 @@ $breakpoints: (
   @include square($diameter);
   border-radius: 50%;
 }
+
+@mixin hoverWithBoxShadow() {
+  &:hover {
+    box-shadow: 0 1px 29px 1px rgba(128, 128, 128, 0.88);
+  }
+}
