@@ -72,6 +72,12 @@
           margin-right: 16px;
         }
       }
+
+      @media (min-width: map-get($breakpoints, "small")) {
+        .profile {
+          overflow: hidden;
+        }
+      }
     }
   }
 }
