@@ -18,3 +18,9 @@
     @include square(108px);
   }
 }
+
+@media (max-width: map-get($breakpoints, "small" )) {
+  .catalogue-card {
+    width: 70%;
+  }
+}

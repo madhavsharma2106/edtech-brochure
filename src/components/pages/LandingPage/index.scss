@@ -93,6 +93,7 @@
 @media (max-width: map-get($breakpoints, "small" )) {
   .landing-page {
     background-size: auto;
+
     .hero-container {
       flex-direction: column;
       padding: 16px;
@@ -106,12 +107,19 @@
     }
 
     .course-catalogue {
+      width: 100%;
       .heading {
         color: $primary-black;
+        padding: 16px;
       }
     }
 
     .featured-courses {
+      .title {
+        .coin-badge {
+          display: block;
+        }
+      }
       .courses {
         flex-direction: column;
         & > div {

@@ -31,7 +31,11 @@ function FeaturedCourses() {
           />
           = 21st century skills you’ll unlock
         </Text>
-        <Text variant={TextVariant.subHadingOne} type={TextType.span}>
+        <Text
+          variant={TextVariant.subHadingOne}
+          type={TextType.span}
+          className="coin-badge"
+        >
           <img
             className="badge"
             src={require("../../../assets/icons/coin.svg")}
