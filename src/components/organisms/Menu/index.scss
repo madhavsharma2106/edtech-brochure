@@ -1,0 +1,43 @@
+@import "../../../styles/main.scss";
+
+.menu {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    cursor: pointer;
+    width: 144px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  .links {
+    flex: 5;
+    margin-left: 26px;
+    span {
+      margin-right: 26px;
+      cursor: pointer;
+    }
+  }
+
+  .user-info {
+    display: flex;
+    .icon {
+      @include hoverWithBoxShadow();
+      cursor: pointer;
+      @include square(34px);
+      box-sizing: border-box;
+      padding: 7px;
+      object-fit: contain;
+      border-radius: 5px;
+      margin-right: 16px;
+    }
+    .award {
+      background-image: linear-gradient(to top, #fb8e46, #ffd01e);
+    }
+
+    button {
+      margin-right: 15px;
+    }
+  }
+}

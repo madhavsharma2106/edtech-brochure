@@ -1,0 +1,30 @@
+@import "../../../styles/main.scss";
+.button {
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  @include hoverWithBoxShadow();
+}
+
+.button-primary-one {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: $semibold;
+  background-color: #61abf2;
+  color: $white;
+  border-radius: 5px;
+  opacity: 0.8;
+  padding: 10px 18px;
+}
+
+.button-cta-one {
+  background-color: $primary-yellow;
+  color: $white;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 14px 63px;
+  font-weight: $semibold;
+  text-transform: uppercase;
+}

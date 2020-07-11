@@ -9,10 +9,19 @@ export const TextVariant = {
   titleTwo: "title-two",
   titleThree: "title-three",
   titleFour: "title-four",
+  titleFive: "title-five",
   headingText: "heading-text",
   subHadingOne: "sub-heading-one",
+  subHeadingTwo: "sub-heading-two",
   highlightOne: "highlight-one",
   subTextOne: "sub-text-one",
+  subTextTwo: "sub-text-two",
+  subTextThree: "sub-text-three",
+  menuText: "menu-text",
+  pageTitle: "page-title",
+  routeTitle: "route-title",
+  strikedThrough: "striked-through",
+  offer: "offer",
 };
 
 export const TextType = {

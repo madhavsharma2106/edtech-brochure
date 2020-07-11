@@ -1,0 +1,85 @@
+@import "../../../styles/main.scss";
+.course-card-secondary-wrapper {
+  @include hoverWithBoxShadow();
+  cursor: pointer;
+  width: 330px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+  margin-right: 40px;
+  .course-card-secondary {
+    padding: 16px;
+  }
+  .mask {
+    width: 330px;
+    height: 138px;
+    opacity: 0.16;
+    background-image: linear-gradient(to right, #00b1ff, #00d3d9);
+  }
+  .horizontal-line {
+    padding-top: 22px;
+    padding-bottom: 8px;
+    border-bottom: solid 2px #e2ebef;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  .highlight {
+    color: $primary-black;
+    font-weight: $semibold;
+  }
+  .title {
+    span {
+      margin-right: 20px;
+    }
+  }
+  .event-details {
+    padding: 16px 0;
+    .detail {
+      padding-bottom: 10px;
+      img {
+        @include square(15px);
+        transform: translate(0, 25%);
+        margin-right: 20px;
+        margin-left: 14px;
+      }
+    }
+  }
+  .enrollment-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cta {
+      margin: 0;
+      margin-top: 20px;
+      margin-bottom: 4px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      &:hover {
+        transform: translate(0, -10%);
+        transition: 0.2s;
+      }
+      color: $primary-blue;
+    }
+  }
+
+  .cost {
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin: 10px 0;
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      img {
+        @include square(15px);
+        margin-right: 5px;
+        margin-left: 14px;
+      }
+      .text-striked-through {
+        margin-left: 5px;
+      }
+    }
+  }
+}

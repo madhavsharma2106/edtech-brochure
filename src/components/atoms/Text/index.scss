@@ -48,14 +48,90 @@
   font-weight: $semibold;
   color: $primary-black;
 }
+.text-title-five {
+  @include fontSizeHeightSpacing(20px, 20px, 0.1px);
+  font-weight: $semibold;
+  color: $primary-black;
+}
+
+.text-offer {
+  @include fontSizeHeightSpacing(16px, auto, 0.11px);
+  font-weight: $semibold;
+  color: $secondary-green;
+}
+
+.text-striked-through {
+  @include fontSizeHeightSpacing(16px, auto, 0.1px);
+  font-weight: $medium;
+  color: $primary-black;
+  opacity: 0.6;
+  text-decoration: line-through;
+}
 
 .text-sub-heading-one {
   @include fontSizeHeightSpacing(17px, 26px, 0.2px);
   color: $secondary-black;
 }
 
+.text-sub-heading-two {
+  @include fontSizeHeightSpacing(18px, auto, 0px);
+  color: $white;
+  font-weight: $semibold;
+}
+
 .text-sub-text-one {
   @include fontSizeHeightSpacing(14px, 20px, 0.2px);
   font-weight: $light;
+  color: $primary-black;
+}
+.text-sub-text-two {
+  @include fontSizeHeightSpacing(14px, 20px, 0);
+  color: $white;
+  font-weight: $light;
+}
+.text-sub-text-three {
+  @include fontSizeHeightSpacing(14px, 20px, 0);
+  color: $primary-black;
+}
+
+@mixin underline() {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 30px;
+  transition: 0.2s;
+  border-bottom: 1px solid $white;
+}
+
+.text-menu-text {
+  @include fontSizeHeightSpacing(15px, 20px, 2px);
+  color: $white;
+  font-weight: $semibold;
+  text-transform: uppercase;
+  position: relative;
+  &:first-child {
+    &::before {
+      @include underline();
+    }
+  }
+
+  &:hover {
+    &::before {
+      @include underline();
+      width: 40px;
+    }
+  }
+}
+
+.text-page-title {
+  @include fontSizeHeightSpacing(40px, 50px, 0);
+  color: $white;
+  font-weight: $semibold;
+}
+
+.text-route-title {
+  @include fontSizeHeightSpacing(12px, auto, 0.5px);
   color: $primary-black;
 }

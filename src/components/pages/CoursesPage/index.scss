@@ -1,0 +1,77 @@
+@import "../../../styles/main.scss";
+.courses-page {
+  background-image: linear-gradient(to bottom, #eef9ff -10%, #ade1ff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 65px;
+
+  .background {
+    background-image: url("../../../assets/images/header-background.svg");
+    background-size: cover;
+  }
+
+  .hero-container {
+    margin-top: 90px;
+    .promo-cards {
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      margin-top: 32px;
+      margin-bottom: 112px;
+    }
+  }
+
+  .courses-container {
+    width: 100%;
+    background-color: $white;
+    margin-top: -45px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 65px;
+
+    .grade-router {
+      border-radius: 5px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #d8e4eb;
+      width: 420px;
+      margin: auto;
+      margin-top: -90px;
+      height: 48px;
+      cursor: pointer;
+      display: flex;
+      background-color: $white;
+      justify-content: space-between;
+      & > div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .active {
+        background-color: $primary-blue;
+        border-color: $primary-blue;
+
+        p {
+          color: $white;
+          font-weight: $semibold;
+        }
+      }
+    }
+
+    .filter {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      span {
+        font-weight: $semibold;
+      }
+    }
+    .course-cards {
+      margin-top: 32px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+}

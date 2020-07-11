@@ -1,0 +1,29 @@
+@import "../../../styles/main.scss";
+
+select {
+  padding: 12px 15px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: $primary-black;
+  border-radius: 5px;
+  border: 1px solid #d8e4eb;
+  background-color: $white;
+  cursor: pointer;
+  @include hoverWithBoxShadow();
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../../assets/icons/down-arrow-black.svg");
+  background-repeat: no-repeat;
+  background-position-x: 92%;
+  background-position-y: 20px;
+  &:focus {
+    outline: none;
+  }
+}
+option {
+  padding: 12px 15px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: $primary-black;
+  background-color: $white;
+}
