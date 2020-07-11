@@ -14,7 +14,7 @@
   .user-info {
     display: flex;
     .icon {
-      @include hoverWithBoxShadow();
+      @include hoverWithBoxShadow2();
       cursor: pointer;
       @include square(34px);
       box-sizing: border-box;
@@ -46,7 +46,7 @@
     }
 
     .profile {
-      @include hoverWithBoxShadow();
+      @include hoverWithBoxShadow2();
       cursor: pointer;
       display: flex;
       .level-info {

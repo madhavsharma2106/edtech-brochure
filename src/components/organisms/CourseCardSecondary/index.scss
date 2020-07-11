@@ -1,12 +1,13 @@
 @import "../../../styles/main.scss";
 .course-card-secondary-wrapper {
-  @include hoverWithBoxShadow();
+  @include hoverWithBoxShadow2();
   cursor: pointer;
   width: 330px;
   border-radius: 4px;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 40px;
   margin-right: 40px;
+  border: solid 1px #ebebeb;
+
   .course-card-secondary {
     padding: 16px;
   }

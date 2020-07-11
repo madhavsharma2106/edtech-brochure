@@ -3,7 +3,7 @@
   border-radius: 5px;
   cursor: pointer;
   border: none;
-  @include hoverWithBoxShadow();
+  @include hoverWithBoxShadow2();
 }
 
 .button-primary-one {

@@ -22,3 +22,8 @@ $breakpoints: (
     box-shadow: 0 1px 29px 1px rgba(128, 128, 128, 0.88);
   }
 }
+@mixin hoverWithBoxShadow2() {
+  &:hover {
+    box-shadow: 0 1px 29px 1px hsla(0, 0%, 50.2%, 0.27);
+  }
+}

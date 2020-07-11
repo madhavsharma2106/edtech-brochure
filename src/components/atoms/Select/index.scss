@@ -9,7 +9,7 @@ select {
   border: 1px solid #d8e4eb;
   background-color: $white;
   cursor: pointer;
-  @include hoverWithBoxShadow();
+  @include hoverWithBoxShadow2();
   -webkit-appearance: none;
   -moz-appearance: none;
   background-image: url("../../../assets/icons/down-arrow-black.svg");

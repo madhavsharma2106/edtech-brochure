@@ -3,7 +3,7 @@
 .slick-slider {
   margin: auto;
   .slider-arrow {
-    @include hoverWithBoxShadow();
+    @include hoverWithBoxShadow2();
     cursor: pointer;
     @include square("48px");
     background-color: $white;
