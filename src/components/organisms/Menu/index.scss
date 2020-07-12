@@ -41,3 +41,67 @@
     }
   }
 }
+
+.menu-mobile {
+  display: none;
+}
+
+@media (max-width: map-get($breakpoints, "small")) {
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
+    position: relative;
+    display: block;
+    .closed {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 16px;
+      padding-top: 30px;
+      align-items: center;
+      .logo {
+        cursor: pointer;
+        width: 144px;
+        height: 24px;
+        object-fit: contain;
+      }
+    }
+
+    .open {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-image: url("../../../assets/images/header-background.svg");
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      & > * {
+        margin-bottom: 30px;
+      }
+
+      .icon {
+        @include hoverWithBoxShadow2();
+        cursor: pointer;
+        @include square(34px);
+        box-sizing: border-box;
+        padding: 7px;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-right: 16px;
+      }
+      .award {
+        background-image: linear-gradient(to top, #fb8e46, #ffd01e);
+      }
+
+      .toggle {
+        position: absolute;
+        top: 39px;
+        right: 16px;
+      }
+    }
+  }
+}

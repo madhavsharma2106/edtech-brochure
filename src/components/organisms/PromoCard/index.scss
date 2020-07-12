@@ -1,3 +1,4 @@
+@import "../../../styles/main.scss";
 .promo-card {
   max-width: 210px;
 
@@ -13,5 +14,15 @@
   .cta {
     text-decoration: underline;
     cursor: pointer;
+  }
+}
+
+@media (max-width: map-get($breakpoints, "small")) {
+  .promo-card {
+    // max-width: 90%;
+    margin-bottom: 30px;
+    img {
+      margin: auto;
+    }
   }
 }
